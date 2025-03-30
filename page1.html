@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure HTML & CSS Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+
+        
+
+
+
+        .container {
+            width: 100%;
+            padding: 20px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .col {
+            padding: 20px;
+        }
+        .col-6 {
+            width: 50%;
+        }
+        .bg-primary {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+        .bg-dark {
+            background-color: rgb(255, 255, 255);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col-4 {
+            width: 33.33%;
+            padding: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: rgb(197, 190, 65);
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .col-6 {
+                width: 100%;
+            }
+            .col-4 {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-6 bg-primary" id="s1">
+                <p>4.8 star rating  Awarded the top adaptogen blend in the world</p>
+                <h1>Achieve your highest self</h1>
+                <div class="row">
+                    <div class="col col-4">
+                        <h1>10x</h1>
+                        <p>Concentration</p>
+                    </div>
+                    <div class="col col-4">
+                        <h1>9</h1>
+                        <p>Powerful ingredients</p>
+                    </div>
+                    <div class="col col-4">
+                        <h1>1000mg</h1>
+                        <p>Of adaptogens per dose</p>
+                    </div>
+                </div>
+                <button>Sign in</button>
+            </div>
+
+            <div class="col col-6 bg-dark"  id="s">
+                <img src="assets/img1.png" alt="Image Placeholder">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

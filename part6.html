@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Modified Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Wrapper */
+.wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Flexbox section */
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left Section */
+.left-section {
+    width: 50%;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.description {
+    color: #555;
+}
+
+/* Info Box */
+.info-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.index {
+    color: #007bff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+/* Action Button */
+.action-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.action-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Right Section */
+.right-section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-section img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+
+    .right-section {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="section">
+    <!-- Left Section -->
+    <div class="left-section">
+        <h2>Your morning ritual, made to awaken your mind.</h2>
+        <p class="description">Transform your mornings with a simple, potent, and powerful ritual that fuels your day</p>
+
+        <div class="info-box">
+            <div class="index">1</div>
+            <div>
+                <h4 class="title">Prep your favorite drink</h4>
+                <p>Start your morning with your favorite beverage, whether it's a nutrient-packed smoothie or a warm cup of tea.</p>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div class="index">2</div>
+            <div>
+                <h4 class="title">Take a scoop</h4>
+                <p>Simply add one potent scoop packed with x10 the potency to boost energy, enhance clarity, and support wellness all daySome description text.</p>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div class="index">3</div>
+            <div>
+                <h4 class="title">Customize and mix</h4>
+                <p>Personalize your morning drink. Stir well for a perfectly blended, nutrient-rich beverage that awakens your mind and prepares you for the day.</p>
+            </div>
+        </div>
+
+        <button class="action-btn">See how people are using Alcami</button>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+        <img src="assets/img6.png" alt="Sample Image">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 1 1 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid #ccc;
+            padding: 20px;
+        }
+        .content-area {
+            flex: 1 1 100%;
+            padding: 20px;
+        }
+        .grid-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .box {
+            display: flex;
+            align-items: center;
+            border: 2px solid #ccc;
+            padding: 15px;
+            width: 100%;
+        }
+        .box img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+        .box-content {
+            flex: 1;
+        }
+        .custom-btn {
+            margin-top: 20px;
+            padding: 10px 60px 10px 20px;
+            border: none;
+            border-radius: 20cap;
+            background: #E2C065;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        @media (min-width: 768px) {
+            .sidebar {
+                flex: 0 0 30%;
+                border-right: 2px solid #ccc;
+                border-bottom: none;
+            }
+            .content-area {
+                flex: 0 0 70%;
+            }
+            .box {
+                width: calc(50% - 10px);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .wrapper {
+                flex-wrap: nowrap;
+            }
+            .box {
+                width: calc(50% - 10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <img src="/assets/img8.png" alt="Sidebar Image">
+        </div>
+        <div class="content-area">
+            <div class="grid-layout">
+                <div class="box">
+                    <img src="/assets/img9.png" alt="">
+                    <div class="box-content">
+                        <h1>Boosts Energy and Stamina</h1>
+                        <p>Shilajit may improve mental clarity, focus, and memory while helping the body adapt to stress, enhancing overall resilience.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="/assets/img10.png" alt="">
+                    <div class="box-content">
+                        <h1>Enhances Bone and Men's Health</h1>
+                        <p>Shilajit may improve mental clarity, focus, and memory while helping the body adapt to stress, enhancing overall resilience.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="/assets/img11.png" alt="">
+                    <div class="box-content">
+                        <h1>Promotes Cognitive Function & Stress Relief</h1>
+                        <p>Shilajit may improve mental clarity, focus, and memory while helping the body adapt to stress, enhancing overall resilience.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="/assets/img12.png" alt="">
+                    <div class="box-content">
+                        <h1>Supports Immune Health & Anti-Aging</h1>
+                        <p>Shilajit may improve mental clarity, focus, and memory while helping the body adapt to stress, enhancing overall resilience.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="custom-btn">Try Shilajit -></button>
+        </div>
+    </div>
+</body>
+</html>
