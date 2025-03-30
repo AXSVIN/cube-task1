@@ -1,0 +1,42 @@
+
+        
+#img4 {
+position: relative;
+background-image: url(/assets/img4.png);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+padding: 50px 0;
+}
+
+#img4::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7); /* Darker overlay for better contrast */
+}
+
+.gap2 {
+    margin: px 0; /* Adds spacing above and below */
+    }
+
+.container-fluid2 {
+position: relative;
+z-index: 1;
+}
+
+.col2 {
+text-align: left;
+padding: 30px;
+border-radius: 10px;
+position: relative;
+color: white; /* Ensures text remains white */
+font-weight: bold; /* Makes text stand out */
+max-width: 600px; /* Restrict width */
+word-wrap: break-word;
+}
+
+

@@ -1,0 +1,116 @@
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Wrapper */
+.wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Flexbox section */
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left Section */
+.left-section {
+    width: 50%;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.description {
+    color: #555;
+}
+
+/* Info Box */
+.info-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.index {
+    color: #6b7076;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+/* Action Button */
+.action-btn {
+    background-color:#E2C065;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.action-btn:hover {
+    background-color:#E2C065;
+}
+
+/* Right Section */
+.right-section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-section img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+
+    .right-section {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+#p6y
+{
+    color:rgb(255, 208, 0);
+}
+  
+#p6y2
+{
+    margin: 0;
+     padding: 0; 
+    font-family: Arial, sans-serif;
+}

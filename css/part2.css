@@ -1,0 +1,22 @@
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            padding: 20px;
+        }
+        #row1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .g {
+            width: 70%;
+            padding: 20px;
+            color: black;
+            border: 1px solid #E2C065;
+        }

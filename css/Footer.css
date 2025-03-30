@@ -1,0 +1,85 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+#Footer
+{
+    background-color: #322D2D;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.col {
+    padding: 10px;
+}
+.col-6 {
+    width: 50%;
+}
+input {
+    padding: 10px;
+    width: 60%;
+    margin-right: 10px;
+}
+
+#left, #left1 {
+text-align: left;
+margin-left: 20px; /* Adjust left spacing as needed */
+}
+#left {
+text-align: left;
+margin-left: 150px; /* Adjust left spacing */
+padding-right: 10px; /* Add small right-side padding */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #DEA453;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+#center {
+display: flex;
+justify-content: center;
+gap: 20px; /* Default gap */
+padding: 0 40px; /* Default padding */
+}
+
+/* Increase gap and padding on larger screens */
+@media (min-width: 1024px) {
+#center {
+gap: 50px; /* Bigger gap on large screens */
+padding: 0 120px; /* Increase left and right spacing */
+}
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .col-6 {
+        width: 100%;
+    }
+}
+/* Center the rows with ID center */
+#center {
+    display: flex;
+    justify-content: center;
+}
